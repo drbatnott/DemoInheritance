@@ -29,13 +29,34 @@ namespace InheritanceDemo
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.mediaListBox = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // mediaListBox
+            // 
+            this.mediaListBox.FormattingEnabled = true;
+            this.mediaListBox.ItemHeight = 15;
+            this.mediaListBox.Location = new System.Drawing.Point(415, 24);
+            this.mediaListBox.Name = "mediaListBox";
+            this.mediaListBox.Size = new System.Drawing.Size(259, 349);
+            this.mediaListBox.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.mediaListBox);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox mediaListBox;
     }
 }
 
